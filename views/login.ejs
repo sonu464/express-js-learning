@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>login</title>
+  </head>
+  <link rel="stylesheet" href="/stylesheets/login.css" />
+  <body>
+    <h1 style="color: #31285c; padding: 10px 0">
+      Permission <%= permission %>
+    </h1>
+    <div class="wrapper">
+      <div class="heading">
+        <h2>Welcome!</h2>
+        <p>Sign In to your account</p>
+      </div>
+
+      <div class="input-group">
+        <input
+          type="text"
+          id="username"
+          class="input-field"
+          placeholder="Username"
+        />
+      </div>
+
+      <div class="input-group">
+        <input
+          type="password"
+          id="password"
+          class="input-field"
+          placeholder="Password"
+        />
+      </div>
+
+      <div class="input-group row">
+        <div class="row">
+          <input type="checkbox" id="remember" hidden />
+          <label for="remember" class="custom-checkbox"></label>
+          <label for="remember">Remember me?</label>
+        </div>
+
+        <div class="row">
+          <a href="#" target="_blank">Forgot password?</a>
+        </div>
+      </div>
+
+      <div class="input-group">
+        <button>Login <i class="fa-solid fa-arrow-right"></i></button>
+      </div>
+    </div>
+
+    <footer>
+      Created With ❤️ by
+      <a href="https://instagram.com/_bh.oopendra" target="_black"
+        >Bhoopendra</a
+      >
+    </footer>
+  </body>
+</html>
