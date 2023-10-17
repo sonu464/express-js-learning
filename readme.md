@@ -92,4 +92,17 @@ HTTP METHOD - GET AND POST ?
 
 ERROR HANDLING ?
 
--
+- just copy and paste it and create error.ejs file in views
+  
+  app.use(function errorHandler(err, req, res, next) {
+  
+  if (res.headersSent) {
+  
+    return next(err);
+  
+  }
+  res.status(500);
+  
+  res.render("error", { error: err });
+  
+});
